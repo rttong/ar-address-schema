@@ -9,6 +9,8 @@ class CreateContacts < ActiveRecord::Migration
       t.company :company
       t.string  :email
       t.string  :phone
+
+      t.timestamps
     end
   end
 
