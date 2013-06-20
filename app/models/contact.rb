@@ -12,10 +12,7 @@ class Contact < ActiveRecord::Base
   end
 
   def area_code
-  	temp = self.phone
-    temp.split("")
-    temp.shift(3)
-    temp.join("")
+  	self.phone[0..2]
   end
 end
 
